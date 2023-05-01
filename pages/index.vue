@@ -1,3 +1,8 @@
 <template>
-    <h1>HomePage</h1>
+    <FrontLayout>
+
+    </FrontLayout>
 </template>
+<script setup>
+import FrontLayout from '~/layouts/FrontLayout.vue';
+</script>

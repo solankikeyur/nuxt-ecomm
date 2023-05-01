@@ -113,6 +113,7 @@ import AuthLayout from "../../layouts/AuthLayout.vue";
 const client = useSupabaseClient();
 const processing = ref(false);
 const router = useRouter();
+const snackbar = useSnackbar();
 
 const submitHandler = async (values) => {
   const { email, password } = values;
@@ -122,7 +123,10 @@ const submitHandler = async (values) => {
     password: password,
   });
   if (error) {
-    alert(error);
+    snackbar.add({
+      type: "error",
+      text: error
+    })
   } else {
     router.push("/admin");
   }

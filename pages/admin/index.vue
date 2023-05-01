@@ -73,13 +73,17 @@ const client = useSupabaseClient();
 const processing = ref(false);
 const adminStore = useAdminStore();
 const router = useRouter();
+const snackbar = useSnackbar();
 
 const submitHandler = async (values) => {
   processing.value = true;
   const { email, password } = values;
   const {data, error} = await client.auth.signInWithPassword({email: email, password: password});
   if(error) {
-    alert(error);
+    snackbar.add({
+      type: "error",
+      text: error
+    })
   } else {
     const {session, user} = data;
     adminStore.id = user.id;

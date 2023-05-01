@@ -18,7 +18,9 @@
   "dependencies": {
     "@formkit/nuxt": "^0.16.4",
     "@pinia/nuxt": "^0.4.9",
+    "bcryptjs": "^2.4.3",
     "flowbite": "^1.6.5",
+    "nuxt-snackbar": "^1.0.3",
     "pinia": "^2.0.35",
     "pinia-plugin-persistedstate": "^3.1.0",
     "vee-validate": "^4.8.6"
