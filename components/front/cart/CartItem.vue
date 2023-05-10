@@ -86,10 +86,10 @@ const snackbar = useSnackbar();
 const removeCartItem = (id) => {
   if (confirm("Are you sure ?")) {
     customerStore.removeCartItem(id);
+    snackbar.add({
+      type: "success",
+      text: "Removed from cart",
+    });
   }
-  snackbar.add({
-    type: "success",
-    text: "Removed from cart",
-  });
 };
 </script>
