@@ -6,8 +6,33 @@ export default defineNuxtConfig({
     "@nuxtjs/supabase",
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
-    "nuxt-snackbar"
+    "nuxt-snackbar",
+    '@vite-pwa/nuxt'
   ],
+  pwa: {
+    manifest: {
+      name: "Ecomm App",
+      short_name: "Ecomm App",
+      description: "Ecomm App",
+      theme_color: "#32CD32",
+      icons: [
+        {
+          src: "ecomm.png",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "ecomm.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+      ],
+    },
+    devOptions: {
+      enabled: true,
+      type: "module",
+    },
+  },
   app: {
     head: {
       title: "Ecomm",
