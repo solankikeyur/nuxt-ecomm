@@ -2,12 +2,12 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    "./components/**/*.{js,vue,ts}",
+    "./components/**/*.{js,vue,ts,jsx,tsx}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-    "./node_modules/flowbite.{js,ts}"
+    "./plugins/**/*.{js,ts,jsx,tsx}",
+    "./nuxt.config.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
