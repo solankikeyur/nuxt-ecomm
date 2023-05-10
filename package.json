@@ -18,11 +18,15 @@
   "dependencies": {
     "@formkit/nuxt": "^0.16.4",
     "@pinia/nuxt": "^0.4.9",
+    "@stripe/stripe-js": "^1.52.1",
+    "@vue-stripe/vue-stripe": "^4.5.0",
+    "axios": "^1.4.0",
     "bcryptjs": "^2.4.3",
     "flowbite": "^1.6.5",
     "nuxt-snackbar": "^1.0.3",
     "pinia": "^2.0.35",
     "pinia-plugin-persistedstate": "^3.1.0",
+    "stripe": "^12.3.0",
     "vee-validate": "^4.8.6"
   }
 }

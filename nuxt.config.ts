@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Ecomm",
+      script: [
+        {src: "https://js.stripe.com/v3/", defer: true}
+      ]
     },
   },
   snackbar: {
@@ -18,4 +21,10 @@ export default defineNuxtConfig({
     right: true,
     duration: 5000,
   },
+  runtimeConfig: {
+    public: {
+      stripePk: process.env.STRIPE_PK_KEY,
+      stripeSk: process.env.STRIPE_SK_KEY
+    }
+  }
 });

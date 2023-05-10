@@ -2,7 +2,7 @@
   <FrontLayout>
     <Loader v-if="loading"></Loader>
     <div class="m-6" v-else>
-        <div v-if="products && products.length > 0" class="grid grid-cols-3 md:grid-cols-4 gap-4">
+        <div v-if="products && products.length > 0" class="grid m-auto gap-4 grid-cols-3" >
             <ProductCard v-for="product in products" :name="product.name" :price="product.price" :id="product.id"></ProductCard>
         </div>
         <h1 v-else class="text-center" >No products found.</h1>

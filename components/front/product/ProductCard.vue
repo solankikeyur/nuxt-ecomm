@@ -19,7 +19,7 @@
       </a>
       <div class="flex items-center justify-between">
         <span class="text-3xl font-bold text-gray-900 dark:text-white"
-          >${{ price }}</span
+          >Rs {{ price }}</span
         >
         <NuxtLink
           v-if="customerStore.productExists(id)"

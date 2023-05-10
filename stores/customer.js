@@ -52,6 +52,13 @@ const useCustomerStore = defineStore("customer", {
         return true;
       }
       return false;
+    },
+    async getOrders(state) {
+      const {data, error} = await useSupabaseClient().from("order").select("*").eq("customer_id", this.customer.id);
+      if(data) {
+        return data;
+      }
+      return [];
     }
   },
   getters: {
@@ -67,6 +74,7 @@ const useCustomerStore = defineStore("customer", {
       }
       return totalAmount;
     },
+    
   },
   persist: true,
 });

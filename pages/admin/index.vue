@@ -69,6 +69,7 @@
 import AuthLayout from "../../layouts/AuthLayout.vue";
 import useAdminStore from "../../stores/admin";
 
+
 const client = useSupabaseClient();
 const processing = ref(false);
 const adminStore = useAdminStore();

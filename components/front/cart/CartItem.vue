@@ -58,10 +58,10 @@
       </div>
     </td>
     <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-      ${{ cartItem.price }}
+      Rs {{ cartItem.price }}
     </td>
     <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-      ${{ cartItem.price * cartItem.qty }}
+      Rs {{ cartItem.price * cartItem.qty }}
     </td>
     <td class="px-6 py-4">
       <button

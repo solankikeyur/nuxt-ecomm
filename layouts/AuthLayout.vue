@@ -9,7 +9,7 @@
       >
         <img
           class="w-8 h-8 mr-2"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
+          :src="ecomm"
           alt="logo"
         />
         Ecomm
@@ -24,3 +24,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import ecomm from "~/assets/img/ecomm.png"
+</script>

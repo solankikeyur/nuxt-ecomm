@@ -19,6 +19,7 @@ const product = ref({
   updated_at: "",
   price: "",
 });
+
 const submitHandler = async (values) => {
   const { name, price, sku, status } = values;
   const { data, error } = await client.from("product").insert({
